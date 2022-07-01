@@ -162,6 +162,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -176,11 +177,21 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "";
+				LIBRARY_SEARCH_PATHS = /opt/homebrew/Cellar/allegro/5.2.8.0/lib;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = (
+					"-lallegro_font",
+					"-lallegro",
+					"-lallegro_primitives",
+				);
 				SDKROOT = macosx;
+				SYSTEM_HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/allegro/5.2.8.0/include;
 			};
 			name = Debug;
 		};
@@ -220,6 +231,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -228,10 +240,20 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "";
+				LIBRARY_SEARCH_PATHS = /opt/homebrew/Cellar/allegro/5.2.8.0/lib;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = (
+					"-lallegro_font",
+					"-lallegro",
+					"-lallegro_primitives",
+				);
 				SDKROOT = macosx;
+				SYSTEM_HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/allegro/5.2.8.0/include;
 			};
 			name = Release;
 		};
@@ -239,6 +261,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"$(pkg-config",
+					"allegro-5",
+					"allegro_main-5",
+					"allegro_font-5",
+					"--libs",
+					"--cflags)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -247,6 +278,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"$(pkg-config",
+					"allegro-5",
+					"allegro_main-5",
+					"allegro_font-5",
+					"--libs",
+					"--cflags)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
