@@ -1,2 +1,2 @@
 # Checkers
-A simple Checkers client made using Allegro5.
+A simple Checkers client made using C++ and Allegro5.
