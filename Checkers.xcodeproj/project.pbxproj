@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		EE740E6E286F887F00B11027 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE740E6D286F887F00B11027 /* main.cpp */; };
+		EEE9351D287A7B48000CF200 /* Board.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEE9351B287A7B48000CF200 /* Board.cpp */; };
+		EEE93520287A7ED3000CF200 /* Vec2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEE9351E287A7ED3000CF200 /* Vec2.cpp */; };
+		EEE93526287A8505000CF200 /* Piece.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEE93524287A8505000CF200 /* Piece.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		EE740E6A286F887F00B11027 /* Checkers */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Checkers; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE740E6D286F887F00B11027 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		EEE9351B287A7B48000CF200 /* Board.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Board.cpp; sourceTree = "<group>"; };
+		EEE9351C287A7B48000CF200 /* Board.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Board.hpp; sourceTree = "<group>"; };
+		EEE9351E287A7ED3000CF200 /* Vec2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Vec2.cpp; sourceTree = "<group>"; };
+		EEE9351F287A7ED3000CF200 /* Vec2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Vec2.hpp; sourceTree = "<group>"; };
+		EEE93524287A8505000CF200 /* Piece.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Piece.cpp; sourceTree = "<group>"; };
+		EEE93525287A8505000CF200 /* Piece.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Piece.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				EE740E6D286F887F00B11027 /* main.cpp */,
+				EEE9351B287A7B48000CF200 /* Board.cpp */,
+				EEE9351C287A7B48000CF200 /* Board.hpp */,
+				EEE9351E287A7ED3000CF200 /* Vec2.cpp */,
+				EEE9351F287A7ED3000CF200 /* Vec2.hpp */,
+				EEE93524287A8505000CF200 /* Piece.cpp */,
+				EEE93525287A8505000CF200 /* Piece.hpp */,
 			);
 			path = Checkers;
 			sourceTree = "<group>";
@@ -119,6 +134,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEE93526287A8505000CF200 /* Piece.cpp in Sources */,
+				EEE93520287A7ED3000CF200 /* Vec2.cpp in Sources */,
+				EEE9351D287A7B48000CF200 /* Board.cpp in Sources */,
 				EE740E6E286F887F00B11027 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
